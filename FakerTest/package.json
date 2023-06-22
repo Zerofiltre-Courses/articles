@@ -1,0 +1,21 @@
+{
+  "name": "fakertest",
+  "version": "1.0.0",
+  "description": "API for generate data in database",
+  "main": "app.js",
+  "scripts": {
+    "start":"nodemon app.js",
+    "test": "app.js"
+  },
+  "author": "TIENTCHEU Israel (TIL Stack.)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.1.0",
+    "express": "^4.18.2",
+    "faker": "^5.5.3",
+    "mongoose": "^7.2.2",
+    "nodemon": "^2.0.22",
+    "rxjs": "^7.8.1"
+  }
+}
