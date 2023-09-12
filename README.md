@@ -11,7 +11,7 @@ Pour ajouter votre code source à ce projet :
 Il s'agit du projet qui va contenir tous les articles zerofiltre, tu cliques sur fork, et le projet sera forké dans ton compte github à toi.
 
 
-###2/ Puis cloner ton fork
+### 2/ Puis cloner ton fork
 
 #### 2.1/ Dans le projet articles qui vient d'être créé dans ton compte github, clique sur le gros bouton vert pour le cloner.
 Copie l'url https et rends toi dans ton terminal sur ton PC puis fais :
