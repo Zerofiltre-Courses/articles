@@ -1,4 +1,4 @@
-package behavioral;
+package behavioral.memento;
 
 import behavioral.memento.Editor;
 import behavioral.memento.History;
