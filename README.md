@@ -41,7 +41,7 @@ git clone
 #### 2.3/ Copie le dossier créé par le clone dans articles en faisant : 
 
 ```
-cp dossier_clone <Le_chemin_vers_articles_sauvegarde_plus_haut>
+cp dossier_clone_ton_article <Le_chemin_vers_articles_sauvegarde_plus_haut>
 ```
 
 Retorune dans  :
@@ -54,14 +54,35 @@ cd <Le_chemin_vers_articles_sauvegarde_plus_haut>
 
 Supprime l'ancien contexte git : 
 ```
-rm -rf article_django/.git
+rm -rf dossier_clone_ton_article/.git
 ```
 
-Puis pousse 
+#### 2.4/ ⚠️ Mets à jour le fichier .gitignore :  
+
+En effet, une fois `dossier_clone_ton_article` dans le projet `articles`, certains éléments du fichier `.gitignore` ne seront probablement plus valides.  
+
+Il va falloir définir des chemins relatifs à `dossier_clone_ton_article` afin qu'ils soient pris en compte.  
+
+Ex: Nous voulons ignorer :   
+`/articles/dossier_clone_ton_article/android`
+grâce au fichier suivant:   
+`/articles/dossier_clone_ton_article/.gitignore`
+
+Eh bien au lieu de marquer :   
+`/android` qui aurait fonctionné si `/dossier_clone_ton_article` était la racine du projet git, 
+
+il faut marquer:  
+`android` qui est un chemin relatif à l'emplacement du `.gitignore`
+
+En règle générale: 
+
+Gardez à l'esprit que l'utilisation de chemins absolus peut rendre votre fichier .gitignore moins portable, car il dépendra de la structure de répertoires exacte de votre projet. Les chemins relatifs sont généralement préférables car ils fonctionnent indépendamment de l'emplacement du projet sur le système de fichiers.
+
+#### 2.5/ Puis pousse 
 
 ```
 git add . 
-git commit -m "init article django"
+git commit -m "init dossier_clone"
 git push -u origin main
 
 ```
