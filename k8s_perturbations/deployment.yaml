@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: zerofiltre-nginx
+  template:
+    metadata:
+      labels:
+        app: zerofiltre-nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.24.0
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 10
+            podAffinityTerm:
+              labelSelector:
+                matchExpressions:
+                - key: app
+                  operator: In
+                  values:
+                  - zerofiltre-nginx
+              topologyKey: topology.kubernetes.io/zone
