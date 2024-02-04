@@ -30,12 +30,8 @@ Join the Flutter community for discussions and assistance: https://flutter.dev/c
 
 Views
 
+![new](https://github.com/Zerofiltre-Courses/articles/assets/75549586/945197f5-d923-4408-8c88-5d42ba671bb3)
 
-https://github.com/TilStack/toastapp/assets/75549586/371930e6-3a3d-48e0-961b-6be7665e8d2f
-
-
-
-https://github.com/TilStack/toastapp/assets/75549586/97737d3c-4d6e-4fd2-88fd-3312bf12705f
 
 
 Happy toasting!
