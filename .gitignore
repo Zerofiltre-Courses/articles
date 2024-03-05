@@ -31,7 +31,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -280,8 +279,6 @@ flutter_chatbot/.gitignore
 flutter_chatbot/.metadata
 flutter_chatbot/analysis_options.yaml
 flutter_chatbot/pubspec.lock
-flutter_chatbot/pubspec.yaml
-flutter_chatbot/README.md
 flutter_chatbot/android/.gitignore
 flutter_chatbot/android/build.gradle
 flutter_chatbot/android/gradle.properties
