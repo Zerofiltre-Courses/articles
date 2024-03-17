@@ -97,6 +97,10 @@ Clique sur **faire une pull request**. Cela va créer une demande de fusion de l
 
 Et je recevrai et analyserai tes modifications. 
 
+Dans ce cas vous pourrez déjà insérer le lien vers votre dossier dans votre article comme ceci: 
+* Comme d'ahbitude, vous pourrez retrouver le code complet des exemples de cet article sur github: 
+https://github.com/Zerofiltre-Courses/articles/tree/main/<dossier_clone> *
+
 Si tout est OK, j'accepterai la fusion sinon tu vas devoir modifier en local ton fork, le pousser de nouveau. Et j'analyserai et ainsi de suite.
 
 Écris-nous à info@zerofiltre.tech si tu rencontre un quelconque problème.
